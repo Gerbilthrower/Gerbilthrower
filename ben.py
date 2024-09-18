@@ -1,4 +1,3 @@
-
 import random
 number = random.randint (1,12)
 x=0
@@ -20,13 +19,7 @@ t = turtle.Turtle()
 painter = turtle.Turtle()
 painter2 = turtle.Turtle()
 painter3 = turtle.Turtle()
-painter.forward(190)
-painter.right(90)
-painter.forward(280)
-painter.right(90)
-painter.forward(190)
-painter.right(90)
-painter.forward(280)
+
 
 
 if number<4:
@@ -57,17 +50,12 @@ if number<4:
     t.circle(club_size * 1.3, 45)
     t.end_fill()
     t.ht()
+    painter.write("YOU WIN!!!", False, 'center', font = ('Candara', 50, 'bold')
 else: 
 
-    painter2.forward(89)
-    painter2.right(40)
-    painter2.forward(190)
-    painter2.right(90)
-    painter2.forward(280)
-    painter2.right(90)
-    painter2.forward(190)
-    painter2.right(90)
-    painter2.forward(280)
+    painter2.write("YOU LOSE!!!", False, 'center', font= ('Candara', 50, 'bold'))
+    ## you need to win if you want to see the cool thing
+    
 
 
 
@@ -84,5 +72,5 @@ else:
 
 
 
-wn = trtl.Screen()
+wn = turtle.Screen()
 wn.mainloop()
